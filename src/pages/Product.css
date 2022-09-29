@@ -1,0 +1,18 @@
+p {
+  font-size: 15pt;
+}
+#preco {
+  padding-bottom: 20px;
+  font-size: 20pt;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px black;
+  color: gold;
+}
+
+.link_product {
+  padding: 4px 8px;
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  text-shadow: 0px 0px 0px #000;
+}

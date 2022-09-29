@@ -1,9 +1,10 @@
 import { useSearchParams, Link } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch"
+import './Search.css'
 
 const Search = () => {
     const [ searchParams ] = useSearchParams()
-    const url = 'https://my-json-server.typicode.com/dabliuene/react-projeto-catalogo-loja/products?' + searchParams
+    const url = 'https://my-json-server.typicode.com/dabliuene/react-catalogo-loja/products?' + searchParams
     const {data: items, loading, error} = useFetch(url)
 
   return (
@@ -15,7 +16,7 @@ const Search = () => {
             <li key={item.id}>
                 <h2>{item.name}</h2>
                 <p>R$: {item.price}</p>
-                <Link to={`/products/${item.id}`}>Detalhes</Link>
+                <Link to={`/products/${item.id}`} className="link_search">Detalhes</Link>
             </li>
             ))}
       </ul>

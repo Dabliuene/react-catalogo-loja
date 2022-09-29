@@ -1,12 +1,13 @@
 import { useParams, Link } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch"
+import './Product.css'
 
 const Product = () => {
     //4 - Rota dinâmica
     const {id} = useParams()
 
     // 5 - Carregamento de rota dinâmica
-    const url = "https://my-json-server.typicode.com/dabliuene/react-projeto-catalogo-loja/products/" + id
+    const url = "https://my-json-server.typicode.com/dabliuene/react-catalogo-loja/products/" + id
     const {data: product, loading, error} = useFetch(url)
 
     return (
@@ -17,9 +18,9 @@ const Product = () => {
             {product && (
                 <div>
                     <h1>{product.name}</h1>
-                    <p>R$: {product.price}</p>
+                    <p id="preco">R$: {product.price}</p>
                     {/* 6 - Nested routes */}
-                    <Link to={`/products/${product.id}/info`}>Mais informações</Link>
+                    <Link to={`/products/${product.id}/info`} className="link_product">Mais informações</Link>
                 </div>
             )}
         </div>

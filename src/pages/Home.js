@@ -10,7 +10,7 @@ const Home = () => {
   const {data: items, loading, error} = useFetch(url)
 
   return (
-    <div>
+    <div className='div_home'>
       <h1>Produtos:</h1>
       {error && <p>{error}</p>}
       {loading && <p>Carregando produtos...</p>}
