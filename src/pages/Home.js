@@ -6,7 +6,7 @@ import './Home.css'
 
 const Home = () => {
   //3 - Carregamento de dados
-  const url = "https://my-json-server.typicode.com/dabliuene/projeto-react-catalogo-loja/products"
+  const url = "https://my-json-server.typicode.com/dabliuene/react-catalogo-loja/products"
   const {data: items, loading, error} = useFetch(url)
 
   return (
