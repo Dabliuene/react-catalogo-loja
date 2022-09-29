@@ -1,0 +1,58 @@
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.products li {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+  text-align: center;
+  list-style: none;
+  margin: 10px 10px;
+  width: 25%;
+  background-color: #191970;
+  color: white;
+  text-shadow: 2px 2px 1px #b22222;
+  box-shadow: 2px 2px 1px #b22222;
+}
+.products li:hover {
+  padding: 10px;
+  text-align: center;
+  list-style: none;
+  margin: 0 10px;
+  width: 25%;
+  background-color: #191970;
+  color: white;
+  text-shadow: 2px 2px 1px #b22222;
+  box-shadow: 4px 4px 1px #b22222;
+}
+
+.link {
+  padding: 4px 8px;
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  text-shadow: 0px 0px 0px #000;
+}
+
+.link:hover {
+  padding: 4px 8px;
+  color: black;
+  text-decoration: none;
+  background-color: gold;
+  text-shadow: 0px 0px 0px #000;
+  box-shadow: 2px 2px 1px #b22222;
+}
+li p {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  font-size: 18pt;
+  margin-top: -10px;
+}
+
+li h2 {
+  padding: 0px;
+}

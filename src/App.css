@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  background-color: #191970;
+  padding: 5px 0px;
+  color: gold;
+  text-shadow: 2px 2px 1px #b22222;
+}
+#titulo {
+  background-color: #191970;
+  text-shadow: 2px 2px 1px #b22222;
+  padding: 3px;
+  color: gold;
+}
+
+body {
+  background-image: linear-gradient(90deg, #195592, #3475ba);
+}
